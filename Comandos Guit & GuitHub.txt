@@ -1,0 +1,46 @@
+Comandos:
+
+ Windows    Unix
+ cd         cd     -> trocar de diretório
+ dir        ls     -> exibir conteúdo do diretório
+ mkdir      mkdir  -> criar diretório
+ del/rmdir  rm /if -> remover arquivos ou diretórios
+ cls        clear  -> limpar tela 
+ mv         mv     -> mover arquivo
+
+ gerar chave: ssh-keygen -t ed25519 -c lclaudiomendes@icloud.com
+ ler a chave: cat <nomearq.pub>
+ para ativar achave: eval $(ssh-agent)-S
+ para adicionar a chave: ssh_add <nome do Arquivo>
+ para clonar uma pasta do GitHub: git clone <caminho ssh da pasta GuitHud a ser clonada> 
+ para iniciar um git em um diretório: git init
+ para ver arquivps acultos: ls -a
+ para verificar as configurações: git config --list
+ para sair teclar <q>
+ para confugurar usar git config e o nome do que se deseja configurar
+ 
+configurar no primeiro uso do Guit
+ para email: git config --global user.email <"email do desenvolvedor">
+ para nome:  git confog --global user.name <nome do desenvolvedor>
+
+Markdown <nome arquivo.md
+
+Para gerar um Commit:
+  git add *
+  git nommit -m "nome do Arquivo"
+
+Ciclo de Vida no GuitHub:
+  Tracked -> Arquivos Rastreados Pelo Guit (que o guit tem ciência da existência)
+  Untracked -> Arquivos não Rastreados Pelo Guit (que o Guit não tem ciência da existência)
+  Unmodified -> Arquivo rastreado que ainda não sofreu modificações
+  Modified -> Arquivo rastreado que sofreu alterações (sai do status Unmidified para o Modified)
+  Staged -> É onde ficam os arquivos que estão sendo preparados para passar a outro tipo de agrupamento
+  Commit -> git commit -m <texto descritivo do commit entre aspas duplas>
+
+Comandos para linkar com o gitHub
+  git remote add origin https://github.com/Luis-Claudio/livro-receitas.git
+  git remote -v
+  git pull origin master -  para unificar as versões
+  git push -u origin master - para atualizar o Git Hub
+  git clone <URL a ser clonada> - para copiar um parta do Git Hub
+
